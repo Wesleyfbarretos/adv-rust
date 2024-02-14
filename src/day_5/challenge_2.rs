@@ -53,7 +53,6 @@ pub fn run()
                 }
 
                 no_overlaping_ranges.push(remaining);
-                // analisar a função de overlap do video https://www.youtube.com/watch?v=OjWhoZ3Icrs&ab_channel=NeilThistlethwaite
             }
 
             seed_ranges = no_overlaping_ranges.concat();
@@ -66,7 +65,7 @@ pub fn run()
     
     seed_ranges.sort_by(|a, b| a.start.cmp(&b.start));
 
-    println!("{:?}", min(seed_ranges[0].start, seed_ranges[0].end));
+    println!("{}", min(seed_ranges[0].start, seed_ranges[0].end));
 }
 
 fn get_seed_intervals(arr: &Vec<&str>) -> Vec<i64>
