@@ -83,7 +83,7 @@ fn get_seed_ranges(seed_intervals: Vec<i64>) -> Vec<SeedRange>
         
         let length = seed_intervals[i * 2 + 1];
 
-        let end = start + length;
+        let end = start + length - 1;
         
         seed_ranges.push(SeedRange {
             start,
