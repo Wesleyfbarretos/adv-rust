@@ -2,6 +2,7 @@ use std::fs;
 
 pub fn run()
 {   
+    // Add teste
     // let file = fs::read_to_string("./src/day_5/input.example.txt").expect("Read File");
     let file = fs::read_to_string("./src/day_5/input.txt").expect("Read File");
 
